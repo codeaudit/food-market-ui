@@ -59,8 +59,6 @@ class ProductPage extends Component {
                 </div>
                 <div className={cx(styles.column, styles.typeColumn)}>
                     <Label className={styles.title} text={this.props.offer.name}/>
-                <div className={styles.typeColumn}>
-                    <Label className={styles.title} text={this.props.offer.name}/>
                     <AttributeValueFieldContainer className={styles.requirements}>
                         {parameters.map((element, index) => (
                             <AttributeValueField key={index} field={element.field} value={element.value}/>)
